@@ -2,6 +2,7 @@ availableCommand = "attack"
 import random
 import gold
 
+
 def physical_attack(monster):
     crit = random.randint(1, 10)
     fail = random.randint(1, 20)
