@@ -1,6 +1,6 @@
 availableCommand = "attack"
 import random
-
+import gold
 
 def physical_attack(monster):
     crit = random.randint(1, 10)
@@ -29,4 +29,6 @@ def battle(monster):
             print("\n")
         if monster.health <= 0:
             enemyStatus = False
+            gold.goldValue += monster.goldDrops
+
     print("You killed the enemy!")
